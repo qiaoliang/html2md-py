@@ -34,6 +34,9 @@ dependencies = [
   "beautifulsoup4>=4.12.3",
 ]
 
+[project.scripts]
+html-to-markdown = "html_to_markdown.scripts:main"
+
 [dependency-groups]
 dev = [
   "covdefaults>=2.3",
