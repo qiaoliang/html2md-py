@@ -14,11 +14,57 @@ Python 3.9+.
 - Support for pre-configured BeautifulSoup instances
 - Strict semver versioning
 
+## Project Structure
+
+```
+html-to-markdown/
+├── html_to_markdown/          # Main package directory
+│   ├── cli.py                # Command-line interface
+│   ├── converters.py         # HTML to Markdown converters
+│   ├── processing.py         # Core processing logic
+│   ├── utils.py             # Utility functions
+│   ├── constants.py         # Constants and defaults
+│   └── scripts.py           # CLI entry point
+├── tests/                    # Test suite
+│   ├── cli_test.py          # CLI tests
+│   ├── integration_test.py  # Integration tests
+│   ├── module_test.py       # Module tests
+│   └── conftest.py          # Test configuration
+├── pyproject.toml           # Project configuration
+└── README.md               # This file
+```
+
 ## Installation
+
+### Using pip
 
 ```shell
 pip install html-to-markdown
 ```
+
+### Using Poetry
+
+```shell
+poetry add html-to-markdown
+```
+
+### Development Installation
+
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/yourusername/html-to-markdown.git
+   cd html-to-markdown
+   ```
+
+2. Install dependencies:
+   ```shell
+   poetry install
+   ```
+
+3. Install pre-commit hooks:
+   ```shell
+   pre-commit install && pre-commit install --hook-type commit-msg
+   ```
 
 ## Quick Start
 
